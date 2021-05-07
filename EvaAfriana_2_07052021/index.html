@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservia</title>
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-2/css/all.min.css"
@@ -16,28 +15,41 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <div id="logo">
+      <div id="logo" class="container my-4">
         <img src="images/logo/Reservia.svg" alt="Reservia" />
+        <a class="signup mobile" href="#">S'incrire</a>
       </div>
 
       <!-------------------------- nav ---------------------------------->
-      <nav>
+      <!-- <nav>
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Hébergements</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#hebergements">Hébergements</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Activités</a>
+            <a class="nav-link" href="#activites">Activités</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">S'incrire</a>
+        </ul>
+        <a class="nav-link desktop" href="#">S'incrire</a>
+      </nav> -->
+      <!-------------------------- nav ---------------------------------->
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-link">
+            <a class="" href="#hebergements">Hébergements</a>
+          </li>
+          <li class="nav-link">
+            <a class="" href="#activites">Activités</a>
+          </li>
+          <li>
+            <a class="nav-link signup desktop" href="#">S'incrire</a>
           </li>
         </ul>
       </nav>
-      <!-------------------------- nav ---------------------------------->
     </header>
 
     <!-------------------------- hero-section ---------------------------------->
@@ -82,7 +94,7 @@
     <!-------------------------- hero-section ---------------------------------->
 
     <section>
-      <div class="hebergements">
+      <div id="hebergements">
         <h2>Hébergements à Marseille</h2>
         <!-------------------------- card-hebergements ---------------------------------->
         <div class="card-hebergements">
@@ -242,7 +254,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="activites">
       <h2>Activités à Marseilles</h2>
       <div>
         <!-------------------------- card-activite ---------------------------------->
