@@ -207,12 +207,12 @@ h3 {
   padding: 1rem;
 }
 
-.card-hebergements {
+.card-product {
   overflow: hidden;
   margin: 1rem 0;
 }
 
-.card-hebergements > img {
+.card-product > img {
   height: 120px;
   width: 100%;
   object-fit: cover;
@@ -220,18 +220,22 @@ h3 {
   border-radius: 25px 25px 0 0;
 }
 
-.card-hebergements p {
+.card-product p {
   font-size: 12px;
   opacity: 0.7;
   margin: 0;
 }
 
-.card-hebergements-infos {
+.card-product-infos {
   padding: 0.7rem;
 }
 
 .checked {
   color: #0065fc;
+}
+
+#activites {
+  padding: 1rem;
 }
 
 /* Medium devices (tablets, 768px and up) */
