@@ -25,18 +25,6 @@
       </div>
 
       <!-------------------------- nav ---------------------------------->
-      <!-- <nav>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#hebergements">Hébergements</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#activites">Activités</a>
-          </li>
-        </ul>
-        <a class="nav-link desktop" href="#">S'incrire</a>
-      </nav> -->
-      <!-------------------------- nav ---------------------------------->
       <nav>
         <ul class="nav-links">
           <li class="nav-link">
@@ -51,44 +39,50 @@
         </ul>
       </nav>
     </header>
+    <!-------------------------- nav ---------------------------------->
 
     <!-------------------------- hero-section ---------------------------------->
-    <section>
+    <section class="container my-4 px-4">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou pleine nature</p>
-      <div class="search-box">
-        <i class="fas fa-map-marker-alt"></i>
+
+      <form class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text"
+            ><i class="fas fa-map-marker-alt"></i
+          ></span>
+        </div>
         <input
-          type="search"
-          id="site-search"
-          name="q"
-          aria-label="Search through site content"
+          type="text"
+          class="form-control"
+          placeholder="Marseille, France"
+          name="search"
         />
-        <button>Rechercher</button>
-      </div>
-      <div class="filtres">
-        <h3>Filtres</h3>
-        <ul>
+        <button class="btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+
+      <div class="filtre">
+        <p>Filtres</p>
+
+        <ul class="input-icons d-flex flex-wrap">
           <li>
-            <i class="fas fa-money-bill-wave"></i
-            ><a class="filtre" href="#">Économique</a>
+            <i class="fas fa-money-bill-wave icon"></i
+            ><a href="#">Économique</a>
           </li>
+          <li><i class="fas fa-child icon"></i><a href="#">Familial</a></li>
+          <li><i class="fas fa-heart icon"></i><a href="#">Romantique</a></li>
           <li>
-            <i class="fas fa-child"></i><a class="filtre" href="#">Familial</a>
-          </li>
-          <li>
-            <i class="fas fa-heart"></i
-            ><a class="filtre" href="#">Romantique</a>
-          </li>
-          <li>
-            <i class="fas fa-dog"></i
-            ><a class="filtre" href="#">Animaux autorisér</a>
+            <i class="fas fa-dog icon"></i><a href="#">Animaux autorisés</a>
           </li>
         </ul>
       </div>
-      <div>
-        <i class="fas fa-info"></i>
-        <span>Plus de 500 logements sont disponible dans cette ville</span>
+      <div class="filtre-info d-flex mt-4">
+        <i class="fas fa-info py-1"></i>
+        <div class="mark-info">
+          Plus de 500 logements sont disponible dans cette ville
+        </div>
       </div>
     </section>
     <!-------------------------- hero-section ---------------------------------->
