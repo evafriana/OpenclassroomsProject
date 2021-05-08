@@ -250,9 +250,15 @@ h3 {
   .mobile {
     display: none;
   }
+
   .desktop {
     display: flex;
   }
+
+  h1 {
+    font-size: 32px;
+  }
+
   nav li {
     list-style-type: none;
     border-bottom: none;
@@ -270,6 +276,18 @@ h3 {
 
   .nav-link {
     margin: 0 2rem;
+  }
+
+  .input-group {
+    width: 25%;
+  }
+
+  .fa-search::before {
+    content: "Rechercher";
+  }
+
+  .btn {
+    border-radius: 0 15px 15px 0;
   }
 
   .filtre {
