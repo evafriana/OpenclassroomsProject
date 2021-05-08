@@ -27,6 +27,7 @@ h2 {
 
 p {
   font-size: 15px;
+  margin-bottom: 0;
 }
 
 ul {
@@ -163,6 +164,11 @@ h3 {
   margin: 0;
 }
 
+.fa-star {
+  font-size: 0.6rem;
+  margin-top: 1.5rem;
+}
+
 /* card-populaire */
 .populaire {
   background-color: #f2f2f2;
@@ -228,6 +234,7 @@ h3 {
 
 .card-product-infos {
   padding: 0.7rem;
+  padding-left: 1rem;
 }
 
 .checked {
