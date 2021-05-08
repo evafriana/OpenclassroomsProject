@@ -19,6 +19,12 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
 p {
   font-size: 15px;
 }
@@ -133,7 +139,7 @@ a:hover {
   border: solid 1px grey;
   border-radius: 100%;
   font-size: 14px;
-  color: blue;
+  color: #0065fc;
   width: 30px;
   height: 25px;
   text-align: center;
@@ -146,9 +152,60 @@ a:hover {
 }
 /* filtres */
 
+.card-form {
+  border-radius: 25px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* card-populaire */
+.populaire {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+.title-populaire {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-populaire {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.card-populaire img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+  border: solid 0.3rem transparent;
+  border-radius: 25px 0 0 25px;
+}
+
+.card-populaire h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-populaire p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+.fa-star {
+  color: #f2f2f2;
+}
+
 .checked {
   color: #0065fc;
 }
+/* card-populaire */
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -188,5 +245,10 @@ a:hover {
 
   .filtre p {
     padding-right: 1.5rem;
+  }
+
+  .input-icons li:hover {
+    background: #deebff;
+    transition: all 0.5s ease-out;
   }
 }
