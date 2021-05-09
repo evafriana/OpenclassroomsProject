@@ -153,12 +153,6 @@ a:hover {
 }
 /* filtres */
 
-.card-form {
-  cursor: pointer;
-  border-radius: 25px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-}
-
 h3 {
   font-size: 16px;
   font-weight: bold;
@@ -210,33 +204,39 @@ section a:hover {
 
 /* card-populaire */
 
+/* card-accommodation */
 #hebergements {
   padding: 1rem;
 }
 
-.card-product {
-  overflow: hidden;
+.card {
+  width: 24rem;
   margin: 1rem 0;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-.card-product > img {
-  height: 120px;
-  width: 100%;
+.card-img-top {
   object-fit: cover;
+  height: 193.86px;
   border: solid 0.3rem transparent;
   border-radius: 25px 25px 0 0;
 }
 
-.card-product p {
+/* .card-product p {
   font-size: 12px;
   opacity: 0.7;
   margin: 0;
 }
 
 .card-product-infos {
-  padding: 0.7rem;
-  padding-left: 1rem;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+} */
 
 .checked {
   color: #0065fc;
@@ -246,8 +246,8 @@ section a:hover {
   padding: 1rem;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
   .mobile {
     display: none;
   }
@@ -330,7 +330,6 @@ section a:hover {
 
   #hebergements {
     margin: 1rem;
-    width: 75%;
     background-color: #f2f2f2;
     border-radius: 25px;
   }
@@ -338,10 +337,66 @@ section a:hover {
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 360px);
+    grid-gap: 1rem;
+  }
+
+  .card {
+    width: 18rem;
   }
 
   .card-form {
     margin: 1rem;
     background-color: white;
   }
+
+  /* grid-card-activity */
+  .activity {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 115px);
+  }
+
+  .card-product {
+    display: grid;
+    grid-template-rows: repeat(2, 115px);
+  }
+
+  .card-product-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+  .card-one {
+    grid-column: 1/2;
+    grid-row: 1/6;
+  }
+
+  .card-two {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+
+  .card-three {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+
+  .card-four {
+    grid-column: 3/4;
+    grid-row: 1/6;
+  }
+
+  .card-five {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+
+  .card-six {
+    grid-column: 4/5;
+    grid-row: 3/6;
+  }
+  /* grid-card-activity */
 }
