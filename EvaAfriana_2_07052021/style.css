@@ -192,6 +192,12 @@ section a:hover {
 .card-populaire {
   display: flex;
   flex-direction: row;
+  background-color: white;
+  margin: 2rem 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-populaire img {
@@ -311,12 +317,6 @@ section a:hover {
   .card-populaire {
     height: 13rem;
     width: 25rem;
-    background-color: white;
-    margin: 2rem 0.5rem;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 25px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   }
 
   .card-populaire img {
