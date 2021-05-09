@@ -210,7 +210,7 @@ section a:hover {
 }
 
 .card {
-  width: 24rem;
+  width: 92vw;
   margin: 1rem 0;
   overflow: hidden;
   cursor: pointer;
@@ -218,11 +218,20 @@ section a:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-.card-img-top {
+.card-img {
   object-fit: cover;
-  height: 193.86px;
   border: solid 0.3rem transparent;
   border-radius: 25px 25px 0 0;
+}
+
+.card-img-top {
+  height: 160px;
+}
+
+.card-img-activity {
+  height: 160px;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* .card-product p {
@@ -337,18 +346,18 @@ section a:hover {
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 360px);
+    grid-template-rows: repeat(2, 320px);
     grid-gap: 1rem;
   }
 
   .card {
-    width: 18rem;
+    width: 20vw;
   }
 
-  .card-form {
+  /* .card-form {
     margin: 1rem;
     background-color: white;
-  }
+  } */
 
   /* grid-card-activity */
   .activity {
@@ -357,7 +366,7 @@ section a:hover {
     grid-template-rows: repeat(5, 115px);
   }
 
-  .card-product {
+  /* .card-product {
     display: grid;
     grid-template-rows: repeat(2, 115px);
   }
@@ -367,6 +376,27 @@ section a:hover {
     flex-direction: column;
     justify-content: space-around;
     padding: 1rem;
+  } */
+
+  .card-activity {
+    position: relative;
+    width: 23vw;
+    margin: 0.5rem;
+  }
+
+  .card-img-activity {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .card-body-info {
+    position: absolute;
+    bottom: 0;
+    height: 4rem;
+    background-color: white;
+    width: 100%;
   }
 
   .card-one {
