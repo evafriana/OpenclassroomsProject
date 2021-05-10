@@ -9,17 +9,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-2/css/all.min.css"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
-    />
+    /> -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <div id="logo" class="container my-4">
+      <div id="logo">
         <img src="images/logo/Reservia.svg" alt="Reservia" />
         <a class="signup mobile" href="#">S'incrire</a>
       </div>
@@ -39,14 +39,14 @@
         </ul>
       </nav>
     </header>
-    <!-------------------------- nav ---------------------------------->
+    <!-------------------------- End-nav ---------------------------------->
 
     <!-------------------------- hero-section ---------------------------------->
-    <section class="my-4 px-4">
+    <section class="hero-section">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou pleine nature</p>
 
-      <form class="input-group my-4">
+      <form class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text"
             ><i class="fas fa-map-marker-alt"></i
@@ -66,7 +66,7 @@
       <div class="filtre">
         <p>Filtres</p>
 
-        <ul class="input-icons d-flex flex-wrap">
+        <ul class="input-icons">
           <li>
             <i class="fas fa-money-bill-wave icon"></i
             ><a href="#">Économique</a>
@@ -78,19 +78,19 @@
           </li>
         </ul>
       </div>
-      <div class="filtre-info d-flex mt-4">
-        <i class="fas fa-info py-1"></i>
+      <div class="filtre-info">
+        <i class="fas fa-info"></i>
         <div class="mark-info">
           Plus de 500 logements sont disponible dans cette ville
         </div>
       </div>
     </section>
-    <!-------------------------- hero-section ---------------------------------->
+    <!-------------------------- End-hero-section ---------------------------------->
 
     <!-------------------------- card-accommodation ---------------------------------->
     <section class="accommodation">
       <div class="populaire">
-        <div class="title-populaire d-flex my-4">
+        <div class="titre-section title-populaire">
           <h2>Les plus populaires</h2>
           <i class="fas fa-chart-line"></i>
         </div>
@@ -166,7 +166,7 @@
       </div>
 
       <div id="hebergements">
-        <h2 class="my-3">Hébergements à Marseille</h2>
+        <h2 class="titre-section">Hébergements à Marseille</h2>
         <!-------------------------- card-hebergements ---------------------------------->
         <div class="cards">
           <a href="#" target="_blank">
@@ -307,14 +307,14 @@
           </a>
         </div>
         <!-------------------------- card-hebergements ---------------------------------->
-        <h3 class="mt-4"><a href="">Afficher plus</a></h3>
+        <h3><a href="">Afficher plus</a></h3>
       </div>
     </section>
-    <!-------------------------- card-accommodation ---------------------------------->
+    <!-------------------------- End-card-accommodation ---------------------------------->
 
     <!-------------------------- card-activity ---------------------------------->
     <section id="activites">
-      <h2 class="my-3">Activités à Marseilles</h2>
+      <h2 class="titre-section">Activités à Marseilles</h2>
       <div class="activity">
         <!-------------------------- card-activite ---------------------------------->
         <div class="card card-activity card-one">
@@ -399,42 +399,38 @@
         <!-------------------------- card-activite ---------------------------------->
       </div>
     </section>
-    <!-------------------------- card-activity ---------------------------------->
+    <!-------------------------- End-card-activity ---------------------------------->
 
-    <footer class="bg-light text-left text-lg-start">
-      <div class="p-4">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-            <h3 class="mb-3">A propos</h3>
+    <!-------------------------- footer ---------------------------------->
+    <footer>
+      <!--Grid column-->
+      <div>
+        <h3 class="titre-section">A propos</h3>
 
-            <p>Fonctionnement du site</p>
-            <p>Conditions général du vente</p>
-            <p>Données et confientialité</p>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h3 class="mb-3">Nos hébergements</h3>
-
-            <p>Charte qualité</p>
-            <p>Soumettre votre hotel</p>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h3 class="mb-3">Nos hébergements</h3>
-
-            <p>Centre d'aide</p>
-            <p>Nous contacter</p>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
+        <p>Fonctionnement du site</p>
+        <p>Conditions général du vente</p>
+        <p>Données et confientialité</p>
       </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div>
+        <h3 class="titre-section">Nos hébergements</h3>
+
+        <p>Charte qualité</p>
+        <p>Soumettre votre hotel</p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div>
+        <h3 class="titre-section">Nos hébergements</h3>
+
+        <p>Centre d'aide</p>
+        <p>Nous contacter</p>
+      </div>
+      <!--Grid column-->
     </footer>
+    <!-------------------------- End-footer ---------------------------------->
   </body>
 </html>
