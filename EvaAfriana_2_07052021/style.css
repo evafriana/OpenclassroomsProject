@@ -392,13 +392,15 @@ footer p {
     padding-right: 1.5rem;
   }
 
+  .filtre-info i {
+    font-size: 11px;
+    width: 19px;
+    height: 19px;
+  }
+
   .input-icons li:hover {
     background: #deebff;
     transition: all 0.5s ease-out;
-  }
-
-  .icon-search {
-    border-radius: 0 20px 20px 0;
   }
 
   .fa-search::before {
@@ -508,12 +510,12 @@ footer p {
     grid-row: 3/6;
   }
   /* grid-card-activity */
-}
 
-footer {
-  flex-direction: row;
-}
+  footer {
+    flex-direction: row;
+  }
 
-.nos-hebergements {
-  padding: 0 18rem;
+  .nos-hebergements {
+    padding: 0 18rem;
+  }
 }
