@@ -155,7 +155,7 @@ input {
   text-align: center;
   color: white;
   background-color: #0065fc;
-  border-radius: 25%;
+  border-radius: 20px;
 }
 
 .form-control {
@@ -244,12 +244,13 @@ section a:hover {
 }
 
 .card {
-  width: 92vw;
+  width: 100%;
   margin: 1rem 0;
   overflow: hidden;
   cursor: pointer;
   border-radius: 25px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .card-body {
@@ -299,10 +300,6 @@ section a:hover {
   padding: 1rem;
 }
 
-#hebergements h3 {
-  margin-top: 2rem;
-}
-
 .card-img {
   object-fit: cover;
   border: solid 0.3rem transparent;
@@ -318,6 +315,12 @@ section a:hover {
   height: 160px;
   object-fit: cover;
   width: 100%;
+}
+
+.afficher-plus {
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 /* card-hebergements */
 
@@ -368,7 +371,7 @@ footer p {
 
   header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -380,30 +383,26 @@ footer p {
     width: 25%;
   }
 
-  .fa-search::before {
-    content: "Rechercher";
-  }
-
-  .btn {
-    border-radius: 0 15px 15px 0;
-  }
-
   .filtre {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
     align-items: baseline;
   }
 
-  .filtre p {
+  .filtre h2 {
     padding-right: 1.5rem;
   }
 
   .input-icons li:hover {
     background: #deebff;
     transition: all 0.5s ease-out;
+  }
+
+  .icon-search {
+    border-radius: 0 20px 20px 0;
+  }
+
+  .fa-search::before {
+    content: "Rechercher";
   }
 
   .accommodation {
@@ -509,4 +508,12 @@ footer p {
     grid-row: 3/6;
   }
   /* grid-card-activity */
+}
+
+footer {
+  flex-direction: row;
+}
+
+.nos-hebergements {
+  padding: 0 18rem;
 }
