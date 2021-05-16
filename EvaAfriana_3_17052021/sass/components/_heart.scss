@@ -7,49 +7,59 @@ input[type="checkbox"] {
   position: absolute;
   left: -9999px;
   opacity: 0;
-}
 
-// input[type="checkbox"] + label {
-//   position: relative;
-//   cursor: pointer;
-//   display: block;
-// }
+  + label {
+    position: relative;
+    cursor: pointer;
+    display: block;
+  }
 
-input[type="checkbox"] + label:before {
-  /* Font Awesome */
-  font-family: "Font Awesome 5 Free";
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\f004"; /* fa-heart */
+  + label:before {
+    /* Font Awesome */
+    font-family: "Font Awesome 5 Free";
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\F004"; /* fa-heart */
+    color: black;
+    color: lighten($colour-text, 30%);
 
-  font-size: 24px;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  // -webkit-text-stroke-width: 0;
-  // -webkit-text-stroke-color: black;
-}
+    font-size: 24px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+  }
 
-input[type="checkbox"] + label:after {
-  /* Font Awesome */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\f004"; /* fa-heart */
+  + label:after {
+    /* Font Awesome */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\F004"; /* fa-heart */
+    color: $colour-primary;
+    background-image: linear-gradient(
+      to bottom left,
+      $colour-primary,
+      $colour-secondary
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 
-  font-size: 26px;
-  position: absolute;
-  top: 0;
-  left: -0.2px;
-  //   color: linear-gradient(to bottom left, $colour-primary, $colour-secondary);
+    font-size: 26px;
+    position: absolute;
+    top: 0;
+    left: -0.2px;
 
-  transition: transform 0.15s;
-  transform: scale(0) rotate(90deg);
-}
+    transition: transform 0.15s;
+    transform: scale(0) rotate(90deg);
+  }
 
-input[type="checkbox"]:checked + label:after {
-  transform: scale(1) rotate(0deg);
+  &:checked + label:after {
+    transform: scale(1) rotate(0deg);
+  }
 }
