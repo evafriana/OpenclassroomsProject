@@ -1,0 +1,42 @@
+.nav {
+  color: $colour-text;
+  margin: $margin-space;
+
+  &__dflt {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    z-index: 2;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.5rem;
+    margin-right: -0.5rem;
+    color: $colour-white;
+    background-color: $colour-primary;
+  }
+
+  &__btn {
+    padding: 1.7rem;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: $white-smoke;
+
+    &--active {
+      background-color: lighten($colour-primary, 35%);
+    }
+
+    .fas {
+      padding-right: 2rem;
+      font-size: 1.2rem;
+      color: lighten($colour-text, 50%);
+    }
+
+    .fa-store {
+      color: $colour-primary;
+    }
+  }
+}

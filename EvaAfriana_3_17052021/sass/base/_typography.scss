@@ -5,11 +5,25 @@
   font-family: "Shrikhand", cursive;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
+main {
   font-family: "Roboto", sans-serif;
+
+  h1,
+  h2,
+  p {
+    color: $colour-text;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }

@@ -1,0 +1,25 @@
+.card__resto {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: $margin-space;
+
+  > img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  p {
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  &__infos {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

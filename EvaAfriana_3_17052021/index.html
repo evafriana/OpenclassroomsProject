@@ -6,23 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header class="header">
       <h1 class="header__logo">ohmyfood</h1>
     </header>
-    <section class="hero">
-      <div class="hero__loc">
-        <i class="fas fa-map-marker-alt"></i>
-        <p>Paris, Belleville</p>
-      </div>
-      <div class="hero__content">
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exceptions, séléctionnés par nos soins.</p>
-        <button class="btn"><a href="https://www.google.com/">Explorer nos restaurants</a></button>
-      </div>
-    </section>
-    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero__loc">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Paris, Belleville</p>
+        </div>
+        <div class="hero__content">
+          <h1>Réservez le menu qui vous convient</h1>
+          <p>
+            Découvrez des restaurants d'exceptions, séléctionnés par nos soins.
+          </p>
+          <button class="btn">
+            <a href="https://www.google.com/">Explorer nos restaurants</a>
+          </button>
+        </div>
+      </section>
+
+      <section class="m-section">
+        <h1>Fonctionnement</h1>
+        <a href="#">
+          <div class="nav nav__dflt">
+            <span class="nav__list nav__dflt">1</span>
+            <div class="nav__btn nav__dflt">
+              <span class="fas fa-mobile-alt"></span>
+              <p>Choisissez un restaurant</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="nav nav__dflt">
+            <span class="nav__list nav__dflt">2</span>
+            <div class="nav__btn nav__dflt">
+              <span class="fas fa-list-ul"></span>
+              <p>Composez votre menu</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="nav nav__dflt">
+            <span class="nav__list nav__dflt">3</span>
+            <div class="nav__btn nav__dflt nav__btn--active">
+              <span class="fas fa-store"></span>
+              <p>Dégustez au restaurant</p>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <section class="restaurants">
+        <h1>Restaurants</h1>
+
+        <a href="#">
+          <div class="card__resto">
+            <img
+              src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg"
+            />
+            <div class="card__resto__infos">
+              <div>
+                <h2>La pallette du goût</h2>
+                <p>Ménilmontant</p>
+              </div>
+              <div class="heart">
+                <input type="checkbox" id="check1" />
+                <label for="check1"></label>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="card__resto">
+            <img
+              src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg"
+            />
+            <div class="card__resto__infos">
+              <div>
+                <h2>La note enchantée</h2>
+                <p>Charonne</p>
+              </div>
+              <span class="card__resto__heart"
+                ><i class="far fa-heart"></i
+              ></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="card__resto">
+            <img
+              src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg"
+            />
+            <div class="card__resto__infos">
+              <div>
+                <h2>À la française</h2>
+                <p>Cité Rouge</p>
+              </div>
+              <span class="card__resto__heart"
+                ><i class="far fa-heart"></i
+              ></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="card__resto">
+            <img
+              src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg"
+            />
+            <div class="card__resto__infos">
+              <div>
+                <h2>La délicedes sens</h2>
+                <p>Folie-Méricout</p>
+              </div>
+              <span class="card__resto__heart"
+                ><i class="far fa-heart"></i
+              ></span>
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
   </body>
 </html>

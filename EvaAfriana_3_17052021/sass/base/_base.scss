@@ -13,3 +13,11 @@ body {
 a {
   text-decoration: none;
 }
+
+.m-section {
+  margin: $margin-section;
+}
+
+i {
+  color: $colour-text;
+}
