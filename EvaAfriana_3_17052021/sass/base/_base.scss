@@ -18,11 +18,12 @@ a {
   margin: $margin-section;
 }
 
-i {
-  color: $colour-text;
+li {
+  list-style-type: none;
 }
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  overflow: auto;
 }

@@ -22,11 +22,18 @@ a {
   margin: 4rem 1rem;
 }
 
-i {
-  color: #000;
+li {
+  list-style-type: none;
 }
 
-.header__logo {
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.header__logo,
+.footer__logo {
   font-family: "Shrikhand", cursive;
 }
 
@@ -79,7 +86,7 @@ main p {
 }
 
 .card__resto > img {
-  height: 200px;
+  height: 230px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -114,14 +121,22 @@ input[type="checkbox"] {
   opacity: 0;
 }
 
+input[type="checkbox"] + label {
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+
 input[type="checkbox"] + label:before {
   /* Font Awesome */
   font-family: "Font Awesome 5 Free";
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "\00f4";
+  content: "\F004";
   /* fa-heart */
+  color: black;
+  color: #4d4d4d;
   font-size: 24px;
   position: absolute;
   top: 1px;
@@ -135,9 +150,17 @@ input[type="checkbox"] + label:after {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "\00f4";
+  content: "\F004";
   /* fa-heart */
-  font-size: 52px;
+  color: #9356dc;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#9356dc), to(#ff79da));
+  background-image: linear-gradient(to bottom left, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 26px;
   position: absolute;
   top: 0;
   left: -0.2px;
@@ -165,7 +188,7 @@ input[type="checkbox"]:checked + label:after {
   width: 100%;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
 .nav {
@@ -207,13 +230,50 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .nav__btn .fas {
-  padding-right: 2rem;
-  font-size: 1.2rem;
+  padding-right: 2.5rem;
+  height: 1rem;
+  width: 1rem;
   color: gray;
 }
 
 .nav__btn .fa-store {
   color: #9356dc;
+}
+
+.footer {
+  padding: 2rem;
+  background-color: #404040;
+}
+
+.footer img {
+  width: 120px;
+  height: 30px;
+}
+
+.footer ul {
+  color: #fff;
+}
+
+.footer ul li {
+  padding: 0.3rem 0;
+  font-size: 18px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 0.5rem;
+}
+
+.footer__list--icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 1.2rem;
 }
 
 .hero {
