@@ -1,29 +1,27 @@
 .footer {
   padding: $padding-section;
-  background-color: lighten($color: $colour-text, $amount: 25%);
+  background-color: lighten($colour-text, 25%);
 
   img {
     width: 120px;
     height: 30px;
-  }
-
-  ul {
-    color: $colour-white;
-    li {
-      padding: 0.3rem 0;
-      font-size: 18px;
-    }
+    filter: invert(1);
+    margin-bottom: 0.5rem;
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.5rem;
+    color: $colour-white;
+    padding: 0.3rem 0;
+    font-size: 17px;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     &--icon {
-      height: 1rem;
-      width: 1rem;
+      @include size-icon;
       margin-right: 1.2rem;
+      text-align: center;
     }
   }
 }

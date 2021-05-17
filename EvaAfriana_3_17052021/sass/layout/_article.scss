@@ -1,0 +1,31 @@
+.hero__img {
+  z-index: -1;
+}
+
+.restaurant {
+  border-radius: 45px 45px 0 0;
+  background: darken($white-smoke, 3%);
+  margin-top: -3rem;
+
+  &__title {
+    @include flex-between;
+    padding: $padding-section;
+  }
+}
+
+.menu__title {
+  padding-left: 1rem;
+  margin-bottom: 0.3rem;
+  line-height: 2;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 3px;
+    width: 2.5rem;
+    background-color: $colour-tertiaire;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+  }
+}

@@ -1,5 +1,5 @@
 @import "./utils/variables";
-@import "./utils/functions";
+@import "./utils/mixin";
 
 @import "./base/base";
 @import "./base/typography";
@@ -11,5 +11,6 @@
 @import "./layout/header";
 @import "./layout/nav";
 @import "./layout/footer";
+@import "./layout/article";
 
 @import "./pages/home";

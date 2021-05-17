@@ -1,7 +1,6 @@
 .header {
-  background: white;
-  display: flex;
-  justify-content: center;
+  @include flex-center;
+  background: $colour-white;
   width: 100%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   padding: 1rem 0;

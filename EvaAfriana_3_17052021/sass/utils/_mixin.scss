@@ -1,0 +1,39 @@
+@mixin btn() {
+  // display
+  display: inline;
+  // height width margin padding
+  padding: $btn-padding;
+  margin: $btn-margin;
+  // border background color
+  border: none;
+  border-radius: $btn-border-radius;
+  background-image: linear-gradient(
+    to bottom right,
+    $colour-secondary,
+    $colour-primary
+  );
+  // font text
+  font-family: $font-text;
+  font-size: $btn-font-size;
+}
+
+@mixin card-form {
+  width: 100%;
+  border-radius: 20px;
+}
+
+@mixin size-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}

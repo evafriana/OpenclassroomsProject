@@ -1,9 +1,9 @@
 .card__resto {
   overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
+  background: $colour-white;
   margin: $margin-space;
+  box-shadow: $box-shadow;
+  @include card-form;
 
   > img {
     height: 230px;
@@ -12,14 +12,25 @@
   }
 
   p {
-    font-weight: 300;
     line-height: 1.5;
   }
 
   &__infos {
     padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-between;
+  }
+}
+
+.cardmenu {
+  padding: 0.5rem;
+  filter: drop-shadow($box-shadow);
+  &__info {
+    @include card-form;
+    @include flex-between;
+    background: $colour-white;
+    padding: 0.5rem 1rem;
+    &__title {
+      line-height: 1.5;
+    }
   }
 }

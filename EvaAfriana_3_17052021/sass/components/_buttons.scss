@@ -1,32 +1,5 @@
-$btn-padding: 1rem 1.5rem;
-$btn-margin: 1rem;
-$btn-border-radius: 50px;
-$btn-font: "Roboto", sans-serif;
-$btn-font-size: 15px;
-$btn-font-color: white;
-
-@mixin btn() {
-  // display
-  display: inline;
-  // height width margin padding
-  padding: $btn-padding;
-  margin: $btn-margin;
-  // border background color
-  border: none;
-  border-radius: $btn-border-radius;
-  background-image: linear-gradient(
-    to bottom right,
-    $colour-secondary,
-    $colour-primary
-  );
-  // font text
-  font-family: $btn-font;
-  font-size: $btn-font-size;
-}
-
 .btn {
   @include btn;
-
   a {
     color: white;
   }

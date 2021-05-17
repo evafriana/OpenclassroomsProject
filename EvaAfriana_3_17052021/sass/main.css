@@ -1,3 +1,8 @@
+/* color */
+/* font */
+/* margin */
+/* padding */
+/* button */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap");
 *,
@@ -15,7 +20,13 @@ body {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
+  color: inherit;
+}
+
+a:visited, a:hover, a:active {
+  color: inherit;
 }
 
 .m-section {
@@ -32,32 +43,39 @@ li {
   overflow: auto;
 }
 
-.header__logo,
-.footer__logo {
-  font-family: "Shrikhand", cursive;
-}
-
-main {
+body {
   font-family: "Roboto", sans-serif;
 }
 
-main h1,
-main h2,
-main p {
+body .header__logo,
+body .footer__logo {
+  font-family: "Shrikhand", sans-serif;
+}
+
+body h1,
+body h2,
+body h3,
+body p {
   color: #000;
 }
 
-main h1 {
-  font-size: 25px;
+body h1 {
+  font-size: 30px;
 }
 
-main h2 {
+body h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+body h3 {
   font-size: 20px;
   font-weight: 500;
 }
 
-main p {
+body p {
   font-size: 16px;
+  font-weight: 300;
 }
 
 .btn {
@@ -78,11 +96,12 @@ main p {
 
 .card__resto {
   overflow: hidden;
-  background: white;
+  background: #fff;
+  margin: 1.5rem 0;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  margin: 1.5rem 0;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .card__resto > img {
@@ -93,7 +112,6 @@ main p {
 }
 
 .card__resto p {
-  font-weight: 300;
   line-height: 1.5;
 }
 
@@ -178,13 +196,13 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .header {
-  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #fff;
   width: 100%;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -217,12 +235,16 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .nav__btn {
-  padding: 1.7rem;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 20px;
+  padding: 1.7rem;
   -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
   background-color: #f5f5f5;
+}
+
+.nav__btn p {
+  font-weight: 400;
 }
 
 .nav__btn--active {
@@ -230,9 +252,9 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .nav__btn .fas {
-  padding-right: 2.5rem;
   height: 1rem;
   width: 1rem;
+  padding-right: 2.5rem;
   color: gray;
 }
 
@@ -248,6 +270,8 @@ input[type="checkbox"]:checked + label:after {
 .footer img {
   width: 120px;
   height: 30px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .footer ul {
@@ -259,15 +283,8 @@ input[type="checkbox"]:checked + label:after {
   font-size: 18px;
 }
 
-.footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 0.5rem;
+.footer__list:hover {
+  cursor: pointer;
 }
 
 .footer__list--icon {
