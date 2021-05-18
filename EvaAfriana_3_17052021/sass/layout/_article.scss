@@ -10,6 +10,7 @@
   &__title {
     @include flex-between;
     padding: $padding-section 0;
+    align-items: center;
   }
 }
 

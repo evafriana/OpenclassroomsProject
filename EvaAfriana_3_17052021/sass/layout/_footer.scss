@@ -1,6 +1,6 @@
 .footer {
   padding: $padding-section;
-  background-color: lighten($colour-text, 25%);
+  background-color: lighten($colour-text, 10%);
 
   img {
     width: 120px;
@@ -20,7 +20,7 @@
 
     &--icon {
       @include size-icon;
-      margin-right: 1.2rem;
+      margin-right: 1rem;
       text-align: center;
     }
   }

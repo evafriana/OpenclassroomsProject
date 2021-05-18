@@ -1,6 +1,7 @@
 .btn {
   @include btn;
   color: white;
+  filter: drop-shadow($box-shadow);
 
   &:hover {
     filter: opacity(0.9);

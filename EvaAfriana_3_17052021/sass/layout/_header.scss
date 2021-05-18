@@ -4,4 +4,12 @@
   width: 100%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   padding: 1rem 0;
+  align-items: center;
+
+  &__arrow {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 2rem;
+    color: lighten($colour-text, 10%);
+  }
 }

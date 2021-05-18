@@ -96,6 +96,8 @@ body p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   color: white;
+  -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
 
 .btn:hover {
@@ -362,6 +364,16 @@ input[type="checkbox"]:checked + label:after {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   padding: 1rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__arrow {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 2rem;
+  color: #343434;
 }
 
 .nav {
@@ -419,7 +431,7 @@ input[type="checkbox"]:checked + label:after {
 
 .footer {
   padding: 2rem 1.3rem;
-  background-color: #5a5a5a;
+  background-color: #343434;
 }
 
 .footer img {
@@ -443,7 +455,7 @@ input[type="checkbox"]:checked + label:after {
 .footer__list--icon {
   height: 1rem;
   width: 1rem;
-  margin-right: 1.2rem;
+  margin-right: 1rem;
   text-align: center;
 }
 
@@ -465,6 +477,9 @@ input[type="checkbox"]:checked + label:after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem 1.3rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu {
