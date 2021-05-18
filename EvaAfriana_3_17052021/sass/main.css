@@ -367,6 +367,7 @@ input[type="checkbox"]:checked + label:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header__arrow {
