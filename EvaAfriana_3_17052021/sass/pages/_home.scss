@@ -24,6 +24,11 @@
       padding: 1rem 0;
     }
   }
+
+  &__img {
+    height: 300px;
+    object-fit: cover;
+  }
 }
 
 .restaurants {
