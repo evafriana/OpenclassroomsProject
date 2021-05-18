@@ -1,6 +1,9 @@
 .btn {
   @include btn;
-  a {
-    color: white;
+  color: white;
+
+  &:hover {
+    filter: opacity(0.9);
+    cursor: pointer;
   }
 }

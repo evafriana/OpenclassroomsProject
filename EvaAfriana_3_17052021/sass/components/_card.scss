@@ -18,19 +18,126 @@
   &__infos {
     padding: 15px;
     @include flex-between;
+    align-items: center;
   }
 }
 
+// .cardmenu {
+//   @include flex-column;
+//   margin: 1rem 0.7rem;
+
+//   &__info {
+//     @include card-form;
+//     @include flex-column;
+//     line-height: 1.4;
+//     background: $colour-white;
+//     padding: 0.5rem 1rem;
+//     filter: drop-shadow($box-shadow);
+
+//     &__title {
+//       @include flex-between;
+//       p {
+//         font-size: 15px;
+//       }
+//     }
+//     &__price {
+//       font-weight: bolder;
+//       padding-right: 0.5rem;
+//     }
+//   }
+// }
+
 .cardmenu {
-  padding: 0.5rem;
+  @include flex-between;
+  border-radius: 20px;
+  background: $colour-white;
+  margin: 1rem 0.5rem 0.5rem;
   filter: drop-shadow($box-shadow);
-  &__info {
-    @include card-form;
+
+  &__right {
+    background: $colour-tertiaire;
+    border-radius: 0 20px 20px 0;
+    position: relative;
+    right: 0;
+    overflow: hidden;
+    animation-name: left-to-right;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+  }
+
+  &__left {
     @include flex-between;
+    border-radius: 20px;
     background: $colour-white;
+    flex-grow: 2;
     padding: 0.5rem 1rem;
-    &__title {
-      line-height: 1.5;
+  }
+
+  &__info {
+    line-height: 1.5;
+  }
+
+  &__price {
+    font-weight: bold;
+    padding: 0.2rem 1rem;
+    align-self: flex-end;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .cardmenu__right {
+      animation-name: right-to-left;
+      animation-duration: 250ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+      display: grid;
+
+      &::after {
+        position: absolute;
+        place-self: center;
+
+        /* Font Awesome */
+        font-family: "Font Awesome 5 Free";
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\f058"; /* fa-check-circle */
+        color: $colour-white;
+
+        /* Rotate animation */
+        animation: rotation 1s;
+      }
     }
+  }
+}
+
+@keyframes right-to-left {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+@keyframes left-to-right {
+  from {
+    width: 60px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
   }
 }

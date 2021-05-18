@@ -7,11 +7,7 @@
   // border background color
   border: none;
   border-radius: $btn-border-radius;
-  background-image: linear-gradient(
-    to bottom right,
-    $colour-secondary,
-    $colour-primary
-  );
+  background: $btn-background;
   // font text
   font-family: $font-text;
   font-size: $btn-font-size;
@@ -30,10 +26,14 @@
 @mixin flex-between {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 @mixin flex-center {
   display: flex;
   justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
 }
