@@ -12,160 +12,165 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="container">
-    <header class="header">
-      <img
-        class="header__logo"
-        src="images/logo/ohmyfood@2x.svg"
-        alt="oh my food"
-      />
-    </header>
+  <body>
+    <div class="loader"></div>
+    <div class="container">
+      <header class="header">
+        <img
+          class="header__logo"
+          src="images/logo/ohmyfood@2x.svg"
+          alt="oh my food"
+        />
+      </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero__loc">
-          <i class="fas fa-map-marker-alt"></i>
-          <p>Paris, Belleville</p>
-        </div>
-        <div class="hero__content">
-          <h2>Réservez le menu qui vous convient</h2>
-          <p>
-            Découvrez des restaurants d'exceptions, séléctionnés par nos soins.
-          </p>
-          <a href="https://deliveroo.fr/" target="_blank"
-            ><button class="btn">Explorer nos restaurants</button></a
-          >
-        </div>
-      </section>
-
-      <nav class="m-section">
-        <h2>Fonctionnement</h2>
-        <a href="#">
-          <div class="nav nav__dflt">
-            <span class="nav__list nav__dflt">1</span>
-            <div class="nav__btn nav__dflt">
-              <span class="fas fa-mobile-alt"></span>
-              <p>Choisissez un restaurant</p>
-            </div>
+      <main>
+        <section class="hero">
+          <div class="hero__loc">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Paris, Belleville</p>
           </div>
-        </a>
-        <a href="">
-          <div class="nav nav__dflt">
-            <span class="nav__list nav__dflt">2</span>
-            <div class="nav__btn nav__dflt">
-              <span class="fas fa-list-ul"></span>
-              <p>Composez votre menu</p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="nav nav__dflt">
-            <span class="nav__list nav__dflt">3</span>
-            <div class="nav__btn nav__dflt nav__btn--active">
-              <span class="fas fa-store"></span>
-              <p>Dégustez au restaurant</p>
-            </div>
-          </div>
-        </a>
-      </nav>
 
-      <section class="restaurants">
-        <h2>Restaurants</h2>
+          <div class="hero__content">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>
+              Découvrez des restaurants d'exceptions, séléctionnés par nos
+              soins.
+            </p>
+            <a href="https://deliveroo.fr/" target="_blank"
+              ><button class="btn">Explorer nos restaurants</button></a
+            >
+          </div>
+        </section>
 
-        <a href="menu-palette.html">
-          <div class="card__resto">
-            <img
-              src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-              alt="oh my food"
-            />
-            <div class="card__resto__infos">
-              <div>
-                <h3>La pallette du goût</h3>
-                <p>Ménilmontant</p>
-              </div>
-              <div class="heart">
-                <input type="checkbox" id="check1" />
-                <label for="check1"></label>
+        <nav class="m-section">
+          <h2>Fonctionnement</h2>
+          <a href="#">
+            <div class="nav nav__dflt">
+              <span class="nav__list nav__dflt">1</span>
+              <div class="nav__btn nav__dflt">
+                <span class="fas fa-mobile-alt"></span>
+                <p>Choisissez un restaurant</p>
               </div>
             </div>
-          </div>
-        </a>
-
-        <a href="menu-enchantee.html">
-          <div class="card__resto">
-            <img
-              src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-              alt="oh my food"
-            />
-            <div class="card__resto__infos">
-              <div>
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
-              </div>
-              <div class="heart">
-                <input type="checkbox" id="check2" />
-                <label for="check2"></label>
+          </a>
+          <a href="">
+            <div class="nav nav__dflt">
+              <span class="nav__list nav__dflt">2</span>
+              <div class="nav__btn nav__dflt">
+                <span class="fas fa-list-ul"></span>
+                <p>Composez votre menu</p>
               </div>
             </div>
-          </div>
-        </a>
-
-        <a href="menu-alafrancaise.html">
-          <div class="card__resto">
-            <img
-              src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-              alt="oh my food"
-            />
-            <div class="card__resto__infos">
-              <div>
-                <h3>À la française</h3>
-                <p>Cité Rouge</p>
-              </div>
-              <div class="heart">
-                <input type="checkbox" id="check3" />
-                <label for="check3"></label>
+          </a>
+          <a href="">
+            <div class="nav nav__dflt">
+              <span class="nav__list nav__dflt">3</span>
+              <div class="nav__btn nav__dflt nav__btn--active">
+                <span class="fas fa-store"></span>
+                <p>Dégustez au restaurant</p>
               </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </nav>
 
-        <a href="menu-delice.html">
-          <div class="card__resto">
-            <img
-              src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-              alt="oh my food"
-            />
-            <div class="card__resto__infos">
-              <div>
-                <h3>La délicedes sens</h3>
-                <p>Folie-Méricout</p>
-              </div>
-              <div class="heart">
-                <input type="checkbox" id="check4" />
-                <label for="check4"></label>
+        <section class="restaurants">
+          <h2>Restaurants</h2>
+
+          <a href="menu-palette.html">
+            <div class="card__resto">
+              <img
+                src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="oh my food"
+              />
+              <div class="card__resto__infos">
+                <div>
+                  <h3>La pallette du goût</h3>
+                  <p>Ménilmontant</p>
+                </div>
+                <div class="heart">
+                  <input type="checkbox" id="check1" />
+                  <label for="check1"></label>
+                </div>
               </div>
             </div>
-          </div>
-        </a>
-      </section>
-    </main>
+          </a>
 
-    <footer class="footer">
-      <img src="images/logo/ohmyfood@2x.svg" alt="oh my food" />
-      <ul>
-        <li class="footer__list">
-          <i class="fas fa-utensils footer__list--icon"></i
-          ><a href="#">Proposer un restaurant</a>
-        </li>
-        <li class="footer__list">
-          <i class="fas fa-hands-helping footer__list--icon"></i
-          ><a href="#">Devenir partenaire</a>
-        </li>
-        <li class="footer__list"><a href="#">Montion légales</a></li>
-        <li class="footer__list">
-          <a href="mailto:someone@example.com">Contact</a>
-        </li>
-      </ul>
-    </footer>
+          <a href="menu-enchantee.html">
+            <div class="card__resto">
+              <img
+                src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="oh my food"
+              />
+              <div class="card__resto__infos">
+                <div>
+                  <h3>La note enchantée</h3>
+                  <p>Charonne</p>
+                </div>
+                <div class="heart">
+                  <input type="checkbox" id="check2" />
+                  <label for="check2"></label>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="menu-alafrancaise.html">
+            <div class="card__resto">
+              <img
+                src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="oh my food"
+              />
+              <div class="card__resto__infos">
+                <div>
+                  <h3>À la française</h3>
+                  <p>Cité Rouge</p>
+                </div>
+                <div class="heart">
+                  <input type="checkbox" id="check3" />
+                  <label for="check3"></label>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="menu-delice.html">
+            <div class="card__resto">
+              <img
+                src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="oh my food"
+              />
+              <div class="card__resto__infos">
+                <div>
+                  <h3>La délicedes sens</h3>
+                  <p>Folie-Méricout</p>
+                </div>
+                <div class="heart">
+                  <input type="checkbox" id="check4" />
+                  <label for="check4"></label>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <img src="images/logo/ohmyfood@2x.svg" alt="oh my food" />
+        <ul>
+          <li class="footer__list">
+            <i class="fas fa-utensils footer__list--icon"></i
+            ><a href="#">Proposer un restaurant</a>
+          </li>
+          <li class="footer__list">
+            <i class="fas fa-hands-helping footer__list--icon"></i
+            ><a href="#">Devenir partenaire</a>
+          </li>
+          <li class="footer__list"><a href="#">Montion légales</a></li>
+          <li class="footer__list">
+            <a href="mailto:someone@example.com">Contact</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
