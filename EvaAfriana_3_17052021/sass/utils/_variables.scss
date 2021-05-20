@@ -32,3 +32,10 @@ $btn-background: linear-gradient(
 
 /* shadow */
 $box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+/* media query */
+$breakpoints: (
+  tablet: 768px,
+  large-tablet: 992px,
+  desktop: 1200px,
+);

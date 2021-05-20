@@ -34,4 +34,12 @@
 .restaurants {
   background-color: $white-smoke;
   padding: $padding-space;
+
+  &__grid {
+    @media screen and (min-width: map-get($breakpoints, large-tablet)) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
 }
