@@ -140,6 +140,10 @@ input {
   line-height: inherit;
 }
 
+input:focus-visible {
+  outline: none;
+}
+
 .in-icons i {
   position: absolute;
 }
@@ -151,7 +155,7 @@ input {
 
 .icon-search {
   padding: 1.07rem;
-  margin-left: -2rem;
+  margin-left: -3rem;
   text-align: center;
   color: white;
   background-color: #0065fc;
@@ -159,10 +163,11 @@ input {
 }
 
 .form-control {
-  width: 95%;
+  width: 100%;
   padding: 0.9rem;
   border: thin solid #f2f2f2;
   border-left: transparent;
+  border-radius: 0 20px 20px 0;
 }
 
 /* form search  */
@@ -193,6 +198,11 @@ input {
   width: fit-content;
   margin: 0 0.5rem 0.5rem 0;
   font-weight: bolder;
+}
+
+.input-icons li:hover {
+  background: #deebff;
+  transition: all 0.5s ease-out;
 }
 
 .input-icons li a {
@@ -347,7 +357,7 @@ footer p {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 800px) {
   .mobile {
     display: none;
   }
@@ -396,11 +406,6 @@ footer p {
     font-size: 11px;
     width: 19px;
     height: 19px;
-  }
-
-  .input-icons li:hover {
-    background: #deebff;
-    transition: all 0.5s ease-out;
   }
 
   .fa-search::before {
