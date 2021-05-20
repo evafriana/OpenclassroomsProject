@@ -7,10 +7,15 @@
   animation: fadeInOut 3s;
   opacity: 0;
   pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &::after {
     content: "chargement...";
     text-transform: uppercase;
+    font-family: "Amatic SC", cursive;
+    font-size: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,32 +32,5 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-  }
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1, 1);
-    opacity: 0.25;
-  }
-  50% {
-    transform: scale(1.2, 1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1, 1);
-    opacity: 0.25;
   }
 }
