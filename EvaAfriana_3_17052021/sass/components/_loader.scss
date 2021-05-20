@@ -14,8 +14,8 @@
   &::after {
     content: "chargement...";
     text-transform: uppercase;
-    font-family: "Amatic SC", cursive;
-    font-size: 6vh;
+    font-family: $font-title;
+    font-size: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;

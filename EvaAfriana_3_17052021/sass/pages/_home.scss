@@ -36,7 +36,7 @@
   padding: $padding-space;
 
   &__grid {
-    @media screen and (min-width: map-get($breakpoints, large-tablet)) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 1rem;
