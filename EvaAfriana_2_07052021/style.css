@@ -169,7 +169,6 @@ input:focus-visible {
   border-left: transparent;
   border-radius: 0 15px 15px 0;
 }
-
 /* form search  */
 
 /* filtres */
@@ -268,6 +267,11 @@ section a:hover {
   padding: 1.25rem;
 }
 
+.card-pop {
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
 .titre-section {
   margin: 1.5rem 0;
 }
@@ -356,8 +360,17 @@ footer p {
   padding: 0.5rem 0;
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+}
+
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 992px) {
   .mobile {
     display: none;
   }
@@ -447,14 +460,10 @@ footer p {
   }
 
   .cards {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 320px);
-    grid-gap: 1.5rem;
-  }
-
-  .card {
-    width: 19vw;
+    /* grid-gap: 1.5rem; */
   }
 
   /* grid-card-activity */
