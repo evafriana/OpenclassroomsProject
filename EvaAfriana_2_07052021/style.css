@@ -244,7 +244,6 @@ h3 {
 
 .fa-star {
   font-size: 0.6rem;
-  margin-top: 2rem;
   color: rgb(167, 167, 167);
 }
 
@@ -263,13 +262,18 @@ section a:hover {
 }
 
 .card-body {
-  flex: 1 1 auto;
-  padding: 1.25rem;
+  padding: 1.2rem;
+}
+
+.card-heber-info {
+  padding-bottom: 2rem;
 }
 
 .card-pop {
-  flex: 1 1 auto;
-  padding: 1rem;
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .titre-section {
@@ -290,6 +294,7 @@ section a:hover {
 }
 
 .card-populaire {
+  height: 30vh;
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -301,7 +306,6 @@ section a:hover {
 }
 
 .card-populaire img {
-  height: 147px;
   width: 40%;
   object-fit: cover;
   border: solid 0.3rem transparent;
@@ -439,17 +443,6 @@ footer p {
   .card-populaire {
     height: 13rem;
     width: 25rem;
-  }
-
-  .card-populaire img {
-    height: 208px;
-    width: 40%;
-  }
-
-  .card-body-pop {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   #hebergements {
