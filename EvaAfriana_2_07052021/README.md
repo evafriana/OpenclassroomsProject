@@ -10,7 +10,7 @@
  
 ## Contraintes techniques
 
-- deux maquettes : l’une desktop et l’autre mobile. Le site devra également être adapté aux tablettes. 
+- Deux maquettes : l’une desktop et l’autre mobile. Le site devra également être adapté aux tablettes. 
 - Sur ce support, libre de faire les adaptations nécessaires avec la mise en page, tant qu’aucun élément n’est coupé et que le texte a une taille suffisante.
 - Choisir le format des images le plus adapté par rapport à la résolution et au temps de chargement.
 - Les icônes proviennent de la bibliothèque Font Awesome. 
