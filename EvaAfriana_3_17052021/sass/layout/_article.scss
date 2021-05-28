@@ -14,6 +14,13 @@
   }
 }
 
+.menu__article {
+  @media screen and (min-width: map-get($breakpoints, large-tablet)) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .menu {
   margin-top: 2rem;
 
@@ -37,4 +44,7 @@
 
 .btn--menu {
   width: 50%;
+  @media screen and (min-width: map-get($breakpoints, large-tablet)) {
+    width: 32%;
+  }
 }

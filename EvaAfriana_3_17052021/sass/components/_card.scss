@@ -45,7 +45,7 @@
     @include flex-between;
     border-radius: 20px;
     background: $colour-white;
-    flex-grow: 2;
+    flex-grow: 1;
     padding: 0.5rem 1rem;
   }
 
@@ -85,6 +85,18 @@
 
         /* Rotate animation */
         animation: rotation 1s;
+      }
+    }
+
+    .cardmenu__info {
+      h3,
+      p {
+        @media screen and (min-width: map-get($breakpoints, large-tablet)) {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 250px;
+        }
       }
     }
   }

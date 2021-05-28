@@ -1,3 +1,8 @@
+.nav__section {
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    margin: 4rem 20vw;
+  }
+}
 .nav {
   color: $colour-text;
   margin: $margin-space;
