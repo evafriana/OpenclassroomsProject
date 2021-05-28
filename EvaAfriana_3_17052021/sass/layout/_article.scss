@@ -15,7 +15,7 @@
 }
 
 .menu__article {
-  @media screen and (min-width: map-get($breakpoints, large-tablet)) {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -44,7 +44,7 @@
 
 .btn--menu {
   width: 50%;
-  @media screen and (min-width: map-get($breakpoints, large-tablet)) {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
     width: 32%;
   }
 }

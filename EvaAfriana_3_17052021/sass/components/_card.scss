@@ -27,6 +27,8 @@
   border-radius: 20px;
   background: $colour-white;
   margin: 1rem 0.5rem 0.5rem;
+  max-height: 4.37rem;
+  overflow: hidden;
   filter: drop-shadow($box-shadow);
 
   &__right {
@@ -50,7 +52,7 @@
   }
 
   &__info {
-    line-height: 1.5;
+    line-height: 1.6;
   }
 
   &__price {
@@ -91,7 +93,7 @@
     .cardmenu__info {
       h3,
       p {
-        @media screen and (min-width: map-get($breakpoints, large-tablet)) {
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
