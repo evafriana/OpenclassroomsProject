@@ -162,6 +162,10 @@ input:focus-visible {
   border-radius: 15px;
 }
 
+.icon-search:hover {
+  cursor: pointer;
+}
+
 .form-control {
   width: 100%;
   padding: 0.9rem;
@@ -453,10 +457,8 @@ footer p {
   }
 
   .cards {
-    /* display: grid; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 320px);
-    /* grid-gap: 1.5rem; */
   }
 
   /* grid-card-activity */
