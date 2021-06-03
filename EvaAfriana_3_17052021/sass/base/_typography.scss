@@ -28,8 +28,12 @@ body {
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
+
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      font-size: 20px;
+    }
   }
 
   h4 {
@@ -38,7 +42,11 @@ body {
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
+
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      font-size: 16px;
+    }
   }
 }

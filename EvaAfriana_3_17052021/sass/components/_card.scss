@@ -6,13 +6,16 @@
   @include card-form;
 
   > img {
-    height: 230px;
+    height: 170px;
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+      height: 230px;
+    }
     width: 100%;
     object-fit: cover;
   }
 
   p {
-    line-height: 1.5;
+    line-height: 2;
   }
 
   &__infos {
@@ -27,7 +30,10 @@
   border-radius: 20px;
   background: $colour-white;
   margin: 1rem 0.5rem 0.5rem;
-  max-height: 4.37rem;
+  max-height: 3.7rem;
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    max-height: 4.37rem;
+  }
   overflow: hidden;
   filter: drop-shadow($box-shadow);
 
@@ -93,11 +99,12 @@
     .cardmenu__info {
       h3,
       p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 53vw;
         @media screen and (min-width: map-get($breakpoints, desktop)) {
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
-          width: 250px;
+          max-width: 16rem;
         }
       }
     }
