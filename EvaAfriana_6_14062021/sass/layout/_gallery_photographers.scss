@@ -1,0 +1,13 @@
+#photographers {
+  div {
+    margin: 2rem;
+  }
+
+  &__profil {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
