@@ -9,6 +9,14 @@ fetch("./assets/data/fisheye_data.json")
     console.log("error: " + err);
   });
 
+function tags(tags) {
+  return `${tags
+    .map(function (tag) {
+      return `<label>#${tag}</label>`;
+    })
+    .join("")}`;
+}
+
 function appendData({ photographers }) {
   const mainGallery = document.getElementById("photographers");
   for (let i = 0; i < photographers.length; i++) {
@@ -19,11 +27,13 @@ function appendData({ photographers }) {
       src="assets/images/photographers/${photographers[i].portrait}"
       alt="photo ${photographers[i].name}"
     /></a>
-    <h3>${photographers[i].name}</h3>
-    <p>${photographers[i].city}, ${photographers[i].country}</p>
-    <p>${photographers[i].tagline}</p>
-    <p>${photographers[i].price}/jour</p>
-    <p>${photographers[i].tags}</p>
+    <div id="photographers__info">
+      <h2>${photographers[i].name}</h2>
+      <h3>${photographers[i].city}, ${photographers[i].country}</h3>
+      <p>${photographers[i].tagline}</p>
+      <p id="photographers__price">${photographers[i].price}/jour</p> 
+      ${tags(photographers[i].tags)}
+    </div>
     `;
     mainGallery.appendChild(div);
   }
