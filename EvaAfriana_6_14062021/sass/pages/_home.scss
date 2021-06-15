@@ -1,0 +1,16 @@
+.wrapper__container {
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &--one {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+
+    &--two {
+      grid-column: 3 / 4;
+      grid-row: 1;
+    }
+  }
+}
