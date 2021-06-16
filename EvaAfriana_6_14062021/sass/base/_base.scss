@@ -6,12 +6,18 @@
   box-sizing: inherit;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 body {
   box-sizing: border-box;
-  // width: 100vw;
-  // min-width: 320px;
-  max-width: 1440px;
   padding: 0 1rem;
+
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    padding: 0 4rem;
+  }
 }
 
 a {
@@ -31,10 +37,6 @@ li {
 
 .desktop {
   display: none;
-}
-
-.mt-one {
-  padding-top: 1rem;
 }
 
 @media screen and (min-width: map-get($breakpoints, tablet)) {
