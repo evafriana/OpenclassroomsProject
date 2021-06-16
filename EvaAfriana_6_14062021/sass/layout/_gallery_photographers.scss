@@ -13,9 +13,7 @@
   &__profil {
     width: 230px;
     height: 230px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
+    @include img-profil;
   }
 
   &__price {

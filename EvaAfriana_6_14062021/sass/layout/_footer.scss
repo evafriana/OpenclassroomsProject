@@ -1,0 +1,15 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  .contact {
+    padding: 0.5rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
