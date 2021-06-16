@@ -1,0 +1,24 @@
+#photographers {
+  margin: 2rem 0;
+
+  > div {
+    padding: 1.5rem 0;
+    line-height: 1.7;
+  }
+
+  &__info {
+    padding: 1rem 0;
+  }
+
+  &__profil {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__price {
+    color: $color-text;
+  }
+}

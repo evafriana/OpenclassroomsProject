@@ -1,0 +1,30 @@
+.wrapper__container {
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    &--one {
+      grid-column: 1 / 4;
+      grid-row: 1;
+    }
+  }
+}
+
+.main {
+  text-align: center;
+
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    &__title {
+      display: flex;
+      justify-content: center;
+      padding-top: 3rem;
+    }
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      justify-items: center;
+    }
+  }
+}
