@@ -9,32 +9,32 @@ fetch("./assets/data/fisheye_data.json")
     console.log("error: " + err);
   });
 
-function tags(tags) {
-  return `${tags
-    .map(function (tag) {
-      return `<label>#${tag}</label>`;
-    })
-    .join("")}`;
-}
+const tags = (tags) => {
+  const labels = tags.map(
+    (tag) =>
+      `<a><span class="tags" aria-label="Tag" tabindex="0">#${tag}</span></a>`
+  );
+  return `${labels.join("")}`;
+};
 
-function appendData({ photographers }) {
+const appendData = ({ photographers }) => {
   const mainGallery = document.getElementById("photographers");
   for (let i = 0; i < photographers.length; i++) {
     const div = document.createElement("div");
     div.innerHTML = `
-    <a><img
-      id="photographers__profil"
-      src="assets/images/photographers/${photographers[i].portrait}"
-      alt="photo ${photographers[i].name}"
-    /></a>
-    <div id="photographers__info">
+      <a tabindex="0"><img
+        id="photographers__profil"
+        src="assets/images/photographers/${photographers[i].portrait}"
+        aria-label="${photographers[i].name}"
+      />
       <h2>${photographers[i].name}</h2>
-      <h3>${photographers[i].city}, ${photographers[i].country}</h3>
+      </a>
+      <h4>${photographers[i].city}, ${photographers[i].country}</h4>
       <p>${photographers[i].tagline}</p>
+    
       <p id="photographers__price">${photographers[i].price}/jour</p> 
       ${tags(photographers[i].tags)}
-    </div>
     `;
     mainGallery.appendChild(div);
   }
-}
+};

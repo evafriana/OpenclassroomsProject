@@ -27,9 +27,10 @@
   }
 
   &__nav {
-    padding: 0 3rem;
+    padding: 0 2rem;
 
     &__item {
+      margin: -0.1rem;
       display: inline;
     }
   }
