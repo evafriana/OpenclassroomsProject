@@ -1,3 +1,8 @@
+#photographers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .photographers {
   &__info {
     line-height: 1.7;

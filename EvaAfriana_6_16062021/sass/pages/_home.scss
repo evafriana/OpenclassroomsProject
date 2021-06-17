@@ -3,16 +3,23 @@
     position: absolute;
     top: 30px;
     right: 20px;
-    font-size: 1rem;
     font-weight: lighter;
+
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+      right: 50px;
+      top: 42px;
+    }
   }
 
   &__content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    gap: 40px;
+    gap: 60px 40px;
     margin: 2.5rem 0;
+
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+      margin: 2.5rem 1rem;
+    }
   }
 }

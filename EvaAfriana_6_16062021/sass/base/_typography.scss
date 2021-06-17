@@ -10,7 +10,7 @@ body {
     color: $color-primary;
 
     @media screen and (min-width: map-get($breakpoints, tablet)) {
-      font-size: 40px;
+      font-size: 32px;
     }
   }
 
