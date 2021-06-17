@@ -1,0 +1,17 @@
+.header {
+  &__img {
+    width: 180px;
+    margin-left: -1.5rem;
+  }
+
+  &__nav {
+    &__list {
+      display: flex;
+      padding: 0;
+      gap: 5px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 1rem;
+    }
+  }
+}
