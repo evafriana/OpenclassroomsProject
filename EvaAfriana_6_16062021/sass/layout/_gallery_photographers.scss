@@ -1,6 +1,12 @@
 #photographers {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  > div {
+    margin: 3rem 0;
+  }
+
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .photographers {

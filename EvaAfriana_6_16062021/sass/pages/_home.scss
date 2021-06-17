@@ -12,10 +12,7 @@
   }
 
   &__content {
-    display: flex;
-    justify-content: center;
     text-align: center;
-    gap: 60px 40px;
     margin: 2.5rem 0;
 
     @media screen and (min-width: map-get($breakpoints, tablet)) {
