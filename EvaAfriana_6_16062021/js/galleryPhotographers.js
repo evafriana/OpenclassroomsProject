@@ -19,26 +19,27 @@ const tags = (tags) => {
   return `${labels.join("")}`;
 };
 
-const appendData = ({ photographers }) => {
+const appendData = (response) => {
   const mainGallery = document.getElementById("photographers");
-  for (let i = 0; i < photographers.length; i++) {
+  response.photographers.forEach((photographer) => {
     const div = document.createElement("div");
+    console.log(photographer.portrait);
     div.innerHTML = `
     <a tabindex="0">
       <img
         class="photographers__profil"
-        src="assets/images/photographers/${photographers[i].portrait}"
-        aria-label="${photographers[i].name}"
+        src="assets/images/photographers/${photographer.portrait}"
+        aria-label="${photographer.name}"
       />
-      <h2>${photographers[i].name}</h2>
+      <h2>${photographer.name}</h2>
     </a>
     <div class=photographers__info>
-      <h4>${photographers[i].city}, ${photographers[i].country}</h4>
-      <p>${photographers[i].tagline}</p>
-      <p class="photographers__price">${photographers[i].price}/jour</p> 
+      <h4>${photographer.city}, ${photographer.country}</h4>
+      <p>${photographer.tagline}</p>
+      <p class="photographers__price">${photographer.price}/jour</p> 
     <div>
-    ${tags(photographers[i].tags)}
+    ${tags(photographer.tags)}
   `;
     mainGallery.appendChild(div);
-  }
+  });
 };
