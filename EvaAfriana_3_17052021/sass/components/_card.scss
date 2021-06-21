@@ -1,4 +1,5 @@
 .card__resto {
+  position: relative;
   overflow: hidden;
   background: $colour-white;
   margin: $margin-space;
@@ -16,6 +17,18 @@
 
   p {
     line-height: 2;
+  }
+
+  &__button {
+    position: absolute;
+    z-index: 1;
+    color: darken($colour-tertiaire, 40%);
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    right: 1rem;
+    top: 1rem;
+    background-color: $colour-tertiaire;
   }
 
   &__infos {
