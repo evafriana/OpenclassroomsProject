@@ -12,25 +12,11 @@
   align-items: center;
 
   &::after {
-    content: "chargement...";
-    text-transform: uppercase;
-    font-family: $font-title;
-    font-size: 4vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    animation: pulse 1.5s linear infinite;
-    background-image: linear-gradient(
-      45deg,
-      $colour-primary,
-      $colour-secondary
-    );
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    content: "";
+    border-radius: 50%;
+    border-top: 7px solid $colour-primary;
+    width: 200px;
+    height: 200px;
+    animation: spin 1.5s linear infinite;
   }
 }
