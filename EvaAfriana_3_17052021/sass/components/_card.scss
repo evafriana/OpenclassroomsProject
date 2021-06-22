@@ -6,7 +6,7 @@
   box-shadow: $box-shadow;
   @include card-form;
 
-  > img {
+  img {
     height: 170px;
     @media screen and (min-width: map-get($breakpoints, tablet)) {
       height: 230px;

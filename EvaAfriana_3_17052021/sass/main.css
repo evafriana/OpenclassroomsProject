@@ -12,12 +12,12 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -26,7 +26,9 @@ a {
   color: inherit;
 }
 
-a:visited, a:hover, a:active {
+a:visited,
+a:hover,
+a:active {
   color: inherit;
 }
 
@@ -91,18 +93,24 @@ body p {
   margin: 1rem;
   border: none;
   border-radius: 50px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#ff79da),
+    to(#9356dc)
+  );
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   color: white;
   -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
 
 .btn:hover {
   -webkit-filter: opacity(0.9);
-          filter: opacity(0.9);
+  filter: opacity(0.9);
   cursor: pointer;
 }
 
@@ -111,7 +119,7 @@ body p {
   background: #fff;
   margin: 1.5rem 0;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   width: 100%;
   border-radius: 20px;
 }
@@ -120,7 +128,7 @@ body p {
   height: 230px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .card__resto p {
@@ -133,11 +141,11 @@ body p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .cardmenu {
@@ -145,13 +153,13 @@ body p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-radius: 20px;
   background: #fff;
   margin: 1rem 0.5rem 0.5rem;
   -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
 
 .cardmenu__right {
@@ -161,13 +169,13 @@ body p {
   right: 0;
   overflow: hidden;
   -webkit-animation-name: left-to-right;
-          animation-name: left-to-right;
+  animation-name: left-to-right;
   -webkit-animation-duration: 250ms;
-          animation-duration: 250ms;
+  animation-duration: 250ms;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
 }
 
 .cardmenu__left {
@@ -175,13 +183,13 @@ body p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-radius: 20px;
   background: #fff;
   -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
   padding: 0.5rem 1rem;
 }
 
@@ -193,7 +201,7 @@ body p {
   font-weight: bold;
   padding: 0.2rem 1rem;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .cardmenu:hover {
@@ -202,13 +210,13 @@ body p {
 
 .cardmenu:hover .cardmenu__right {
   -webkit-animation-name: right-to-left;
-          animation-name: right-to-left;
+  animation-name: right-to-left;
   -webkit-animation-duration: 250ms;
-          animation-duration: 250ms;
+  animation-duration: 250ms;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   display: -ms-grid;
   display: grid;
 }
@@ -228,7 +236,7 @@ body p {
   color: #fff;
   /* Rotate animation */
   -webkit-animation: rotation 1s;
-          animation: rotation 1s;
+  animation: rotation 1s;
 }
 
 @-webkit-keyframes right-to-left {
@@ -328,9 +336,15 @@ input[type="checkbox"] + label:after {
   content: "\F004";
   /* fa-heart */
   color: #9356dc;
-  background-image: -webkit-gradient(linear, right top, left bottom, from(#9356dc), to(#ff79da));
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#9356dc),
+    to(#ff79da)
+  );
   background-image: linear-gradient(to bottom left, #9356dc, #ff79da);
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -344,12 +358,12 @@ input[type="checkbox"] + label:after {
   transition: transform 0.15s;
   transition: transform 0.15s, -webkit-transform 0.15s;
   -webkit-transform: scale(0) rotate(90deg);
-          transform: scale(0) rotate(90deg);
+  transform: scale(0) rotate(90deg);
 }
 
 input[type="checkbox"]:checked + label:after {
   -webkit-transform: scale(1) rotate(0deg);
-          transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
 }
 
 .header {
@@ -357,16 +371,16 @@ input[type="checkbox"]:checked + label:after {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background: #fff;
   width: 100%;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   padding: 1rem 0;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
 }
 
@@ -387,8 +401,8 @@ input[type="checkbox"]:checked + label:after {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .nav__list {
@@ -407,7 +421,7 @@ input[type="checkbox"]:checked + label:after {
   border-radius: 20px;
   padding: 1.7rem;
   -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
   background-color: #f5f5f5;
 }
 
@@ -439,7 +453,7 @@ input[type="checkbox"]:checked + label:after {
   width: 120px;
   height: 30px;
   -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
   margin-bottom: 0.5rem;
 }
 
@@ -475,12 +489,12 @@ input[type="checkbox"]:checked + label:after {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 2rem 1.3rem 0;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .menu {
@@ -514,8 +528,8 @@ input[type="checkbox"]:checked + label:after {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .hero__loc {
@@ -523,8 +537,8 @@ input[type="checkbox"]:checked + label:after {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 1rem 0;
   background: #ebebeb;
   color: #4d4d4d;
