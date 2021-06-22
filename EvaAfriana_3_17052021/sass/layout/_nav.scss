@@ -10,6 +10,13 @@
   &__dflt {
     display: flex;
     align-items: center;
+
+    :hover {
+      background-color: lighten($colour-primary, 35%);
+      .fas {
+        color: $colour-primary;
+      }
+    }
   }
 
   &__list {
@@ -20,7 +27,7 @@
     padding: 0.5rem;
     margin-right: -0.5rem;
     color: $colour-white;
-    background-color: $colour-primary;
+    background-color: $colour-primary !important;
   }
 
   &__btn {
@@ -33,18 +40,10 @@
       font-weight: 400;
     }
 
-    &--active {
-      background-color: lighten($colour-primary, 35%);
-    }
-
     .fas {
       @include size-icon;
       padding-right: 2.5rem;
       color: lighten($colour-text, 50%);
-    }
-
-    .fa-store {
-      color: $colour-primary;
     }
   }
 }
